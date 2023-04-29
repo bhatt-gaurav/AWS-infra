@@ -33,7 +33,7 @@ module "vpc" {
     Environment       = "${var.environment}"
   }
   vpc_tags = {
-    Name = "vpc-${var.environment}"
+    Name = "vpc-${var.environment}-${var.vpc_name}"
   }
 
 
